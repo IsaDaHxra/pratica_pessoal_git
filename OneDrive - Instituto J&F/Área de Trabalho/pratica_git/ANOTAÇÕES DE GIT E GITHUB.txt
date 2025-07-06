@@ -1,0 +1,16 @@
+ANOTAÇÕES DE GIT E GITHUB
+
+O comando para acessar uma pasta diferente da atual no vs code é utilizando o cd /diretório/pasta (Esse comando é de Linux e é executado no terminal)
+
+Primeiramente utilizamos o git init para criar um repo (repositório) no git. 
+Temos que criar a branch principal (master ou main) com o comando git branch -M main
+Em seguida temos que adicionar para o estado preparado, utilizando o comand git add .  ou git add nome_do_arquivo (de preferência o git add .)
+Logo commitamos o arquivo dando o comando git commit -m "Mensagem desejada"
+Devemos adicionar uma origin para jogarmos o arquivo no repositório do GitHub, então utilizamos o comando git remote add origin main link_repositorio_remoto (do GitHub)
+Então damos um push para jogar no repositório do GitHub com o comando git push -u origin main ou master
+Caso queira tirar a origem podemos utilizar o comando git remote rm origin
+Caso queira visualizar a origem utilizamos o git remote -v
+O git status serve para mostrar nossas ações
+Temos que criar um repositório no GitHub na aba de repositories e dps em new.
+Os traços + a letra após o comando são chamados de flags, eles alteram a funcionalidade principal do comando por exemplo: git commit -m (o -m serve para colocar uma mensagem quando commitar)
+
