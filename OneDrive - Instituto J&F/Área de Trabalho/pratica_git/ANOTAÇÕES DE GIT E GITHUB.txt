@@ -19,4 +19,11 @@ com que os arquivos do repositório sejam clonados dentro da pasta atual que foi
 para deletar um arquivo utilizamos o git rm
 Após deletar um arquivo git ele não terá mais suas atualizações consideradas pelo git
 Para adicionar um arquivo utilizamos o git add
-Podemos acessar um log de modificações feitas no projeto com o git log, então veremos os commits realizados no projeto
+Podemos acessar um log de modificações feitas no projeto com o git log, então veremos os commits realizados no projeto (você pode dar um git log 
+--oneline para aparecer resumido)
+Com o comand git mv podemos renomear um arquivo e ele também pode ser movido para uma pasta. Ele pega o arquivo original, move para uma pasta nova e exclui
+arquivo antigo por exemplo: git mv a.txt texto/a.txt então eu coloquei primeiro o arquivo no qual quis mover, e coloquei onde ele será movido (No caso
+mudei o nome dele pois como agora ele é da pasta texto, ele é o arquivo texto/a.txt e não mais a.txt) ou seja, podemos utilizar ele comando para
+mover um arquivo ou renomear um arquivo.
+Com o comando git checkout o arquivo modificado pode ser retornado ao estado original, ou seja ele sai do staging (estado modificado)
+e caso seja feita uma alteração novamente, ele entrará no staging novamente. Utilizamos o git checkout nome_do_arquivo
