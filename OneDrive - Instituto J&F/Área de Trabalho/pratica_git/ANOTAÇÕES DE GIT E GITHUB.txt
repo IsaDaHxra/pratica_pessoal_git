@@ -13,4 +13,10 @@ Caso queira visualizar a origem utilizamos o git remote -v
 O git status serve para mostrar nossas ações
 Temos que criar um repositório no GitHub na aba de repositories e dps em new.
 Os traços + a letra após o comando são chamados de flags, eles alteram a funcionalidade principal do comando por exemplo: git commit -m (o -m serve para colocar uma mensagem quando commitar)
-
+O git pull serve para puxar um arquivo, então com ele podemos atualizar nosso projeto com uma funcionalidade nova, comando novo etc..
+Para clonar um repositório utilizamos o git clone url para clonar, e caso você crie uma pasta nova, utilizamos o git clone url . (o ponto faz
+com que os arquivos do repositório sejam clonados dentro da pasta atual que foi criada)
+para deletar um arquivo utilizamos o git rm
+Após deletar um arquivo git ele não terá mais suas atualizações consideradas pelo git
+Para adicionar um arquivo utilizamos o git add
+Podemos acessar um log de modificações feitas no projeto com o git log, então veremos os commits realizados no projeto
