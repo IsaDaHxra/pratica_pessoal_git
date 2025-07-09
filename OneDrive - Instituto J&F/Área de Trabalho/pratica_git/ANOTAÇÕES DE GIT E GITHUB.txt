@@ -27,3 +27,8 @@ mudei o nome dele pois como agora ele é da pasta texto, ele é o arquivo texto/
 mover um arquivo ou renomear um arquivo.
 Com o comando git checkout o arquivo modificado pode ser retornado ao estado original, ou seja ele sai do staging (estado modificado)
 e caso seja feita uma alteração novamente, ele entrará no staging novamente. Utilizamos o git checkout nome_do_arquivo
+Para ignorarmos algum ou alguns arquivo(s) no projeto é criar um arquivo chamado .gitignore na raiz do projeto. Nele podemos inserir os arquivos que
+não queremos que entre no versionamento
+Com o comando git reset a gente reseta as mudanças feitas, ele tem as flags --hard (mais utilizda, então ele é um reset completo
+todas as alterações são resetadas) e vc coloca o código da branch por exemplo: origin/main
+Branch é a forma que o git separa as versões do projeto e geralmente cada nova funcionalidade do projeto fica em uma branch diferente
