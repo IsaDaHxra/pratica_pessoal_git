@@ -28,6 +28,7 @@ header h1 {
 main {
     padding: 20px 0;
     margin: 0 10%; /* Adiciona margem lateral para o conteúdo */
+    /*Aprendendo a fazer comentários no CSS*/
 }
 
 section {
@@ -36,6 +37,7 @@ section {
     margin-bottom: 20px;
     border-radius: 8px;
     border-color: pink;
+    border: 1px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .detalhe{
