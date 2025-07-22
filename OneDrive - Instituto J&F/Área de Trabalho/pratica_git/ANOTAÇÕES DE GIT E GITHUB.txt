@@ -59,3 +59,5 @@ outros DEVs. (use a flag -a para pegar todos os branches que estão no remoto)
 Temos que atualizar a main a todo o momento utilizano o pull, no final de tudo dê um merge. Se por um acaso precisar criar uma nova atualização, dê
 um pull na main e depois crie uma nova branch com uma nova funcionalidade.
 Então é necessário manter a main atualizada.
+Submódulo é a forma de conter dois ou mais projetos em apenas um repo. Podemos adicionar uma dependência ao nosso projeto atual, porém mantendo
+suas estruturas separadas. O comando para utilizar o Submódulo é git submodule add <repo> e para verificar os Submódulos o comando é git submodule.
