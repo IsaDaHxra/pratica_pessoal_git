@@ -60,4 +60,7 @@ Temos que atualizar a main a todo o momento utilizano o pull, no final de tudo d
 um pull na main e depois crie uma nova branch com uma nova funcionalidade.
 Então é necessário manter a main atualizada.
 Submódulo é a forma de conter dois ou mais projetos em apenas um repo. Podemos adicionar uma dependência ao nosso projeto atual, porém mantendo
-suas estruturas separadas. O comando para utilizar o Submódulo é git submodule add <repo> e para verificar os Submódulos o comando é git submodule.
+suas estruturas separadas. O comando para utilizar o Submódulo é git submodule add <link_repo> <diretório> (o diretório é opcional, utilizamos
+ele para nãos misturar com a raiz) e para verificar os Submódulos o comando é git submodule.
+Para enviar as atualizações para o repo do Submódulo utilizamos o comando git push --recurse-submodules=on-demand
+esse fluxo atualizará apenas o submódulo.
