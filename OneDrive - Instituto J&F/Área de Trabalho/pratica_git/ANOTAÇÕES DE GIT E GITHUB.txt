@@ -12,7 +12,8 @@ Caso queira tirar a origem podemos utilizar o comando git remote rm origin
 Caso queira visualizar a origem utilizamos o git remote -v
 O git status serve para mostrar nossas ações
 Temos que criar um repositório no GitHub na aba de repositories e dps em new.
-Os traços + a letra após o comando são chamados de flags, eles alteram a funcionalidade principal do comando por exemplo: git commit -m (o -m serve para colocar uma mensagem quando commitar)
+Os traços + a letra após o comando são chamados de flags, eles alteram a funcionalidade principal do comando por exemplo: git commit -m (o -m serve para
+colocar uma mensagem quando commitar)
 O git pull serve para puxar um arquivo, então com ele podemos atualizar nosso projeto com uma funcionalidade nova, comando novo etc..
 Para clonar um repositório utilizamos o git clone url para clonar, e caso você crie uma pasta nova, utilizamos o git clone url . (o ponto faz
 com que os arquivos do repositório sejam clonados dentro da pasta atual que foi criada)
@@ -32,3 +33,29 @@ não queremos que entre no versionamento
 Com o comando git reset a gente reseta as mudanças feitas, ele tem as flags --hard (mais utilizda, então ele é um reset completo
 todas as alterações são resetadas) e vc coloca o código da branch por exemplo: origin/main
 Branch é a forma que o git separa as versões do projeto e geralmente cada nova funcionalidade do projeto fica em uma branch diferente
+Para criar um branch utiliza-se o comando git branch nome_da_branch e para visualizar as branches que tem no projeto é apenas git branch.
+Para deletar uma branche utiliza-se git branch -d nome_da_branch (ou --delete)
+Deletar uma branch é irreversível.
+Para criar e mudar de branch , o comando é git checkout -b nome_da_branch, para mudar de branch, só o checkout sem a flag -b.
+ mas se fizer esses comandos, pode levar alterações que não foram comitadas junto.
+Para unir branches utilizamos o comando git merge <nome>. Ele é um comando muito utilizado.
+Se você quer unir uma branch à outra, você coloca o nome da branch que você quer mesclar com a branch que vc está.
+Após a mesclagem, precisa dar um push para atualizar a main.
+Para salvar as modificações atuais e continuar com outra forma de solução, podemos utilizar o git stash ele meio que "deixa em segundo plano" 
+Ele é jogado em uma lixeira e pode ser recuperado depois.
+Para ver as stashs criadas, utilizamos o comand0 git stash list e podemos recupear a stash com o git stash apply <nome>
+O  nome é colocado automaticamente pelo git, para verificar o nome dele, usamos o próprio git stash list.  
+Com o comando git stash show -p <nome> aparace exatamente as alterações feitas na branch que foram "jogadas na lixeira".
+Para remover todas as stashs, o comando necessário é git stash clear, caso queira uma em específico: git stash drop <nome>
+Tags tem uma função semelhante com a do stash, mas ela de fato vai salvar a alteração sem "jogar na lixeira", ela serve como um checkpoint de uma
+branch. O comando git tag <nome> -m "<msg>" (Pode utilizar a flag -a caso queira todos os arquivos, no caso ficaria git tag -a <nome> -m "<msg>"
+o nome da tag é atribuído por você.)
+Para ver as tags existentes, utilizamos o git tag.
+Com o git show <nome> podemos verificar a tag de forma detalhada, para trocar a tag é o mesmo comando que a troca de branchs, o git checkout <nome>
+Tem como enviar tags para o repositório, para isso, utilizamos o comando git push origin <nomedatag>
+Se quiser enviar mais tags, utilizamos git push origin --tags
+Com o comando git fetch você é atualizado de todos os brancs e tahs que ainda não estão reconhecido por você, então vc encontrará branches de 
+outros DEVs. (use a flag -a para pegar todos os branches que estão no remoto)
+Temos que atualizar a main a todo o momento utilizano o pull, no final de tudo dê um merge. Se por um acaso precisar criar uma nova atualização, dê
+um pull na main e depois crie uma nova branch com uma nova funcionalidade.
+Então é necessário manter a main atualizada.
